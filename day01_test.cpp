@@ -1,7 +1,7 @@
 #include <iostream>
 #include <gtest/gtest.h>
-#include "common.cpp"
-#include "day01.cpp"
+#include "common.h"
+#include "day01.h"
 
 TEST(Day01Test, PartOneSmall) {
     auto small_content = read_small("01");

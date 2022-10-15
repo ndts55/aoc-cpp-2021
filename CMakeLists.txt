@@ -14,7 +14,7 @@ FetchContent_MakeAvailable(googletest)
 add_executable(aoc_cpp_2021 main.cpp)
 
 # Day 01
-add_executable(day01_test day01_test.cpp inputs/input01.txt inputs/small_input01.txt)
+add_executable(day01_test day01_test.cpp day01.cpp common.cpp inputs/input01.txt inputs/small_input01.txt)
 target_link_libraries(day01_test GTest::gtest_main)
 target_compile_definitions(day01_test PUBLIC -DPROJECT_DIRECTORY="${CMAKE_SOURCE_DIR}")
 
